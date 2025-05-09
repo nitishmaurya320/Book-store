@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "name": "Science Fiction",
+      "title": "Explore galaxies and futuristic worlds filled with adventure and wonder.",
+      "price": 12,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Comedy Books",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis ",
+      "price": 6,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Historical Fiction",
+      "title": "Travel through time with rich characters in gripping, dramatic settings.",
+      "price": 15,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mystery Thrillers",
+      "title": "Detectives, clues, and edge-of-your-seat suspense in every chapter.",
+      "price": 10,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Fantasy Adventures",
+      "title": "Magic realms, mythical beasts, and heroes with epic destinies await.",
+      "price": 14,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Self Help",
+      "title": "Boost your productivity, happiness, and focus with actionable advice.",
+      "price": 9,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Biographies",
+      "title": "Inspiring life stories from remarkable people across the globe.",
+      "price": 13,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Romantic Novels",
+      "title": "Heartfelt connections and unforgettable love stories to warm your soul.",
+      "price": 8,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Horror Stories",
+      "title": "Chilling tales that will keep you up all night with goosebumps.",
+      "price": 11,
+      "category": "free",
+      "image": "/books.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Children's Books",
+      "title": "Fun, colorful, and imaginative stories perfect for young readers.",
+      "price": 5,
+      "category": "free",
+      "image": "/books.jpg"
+    }
+  ]
