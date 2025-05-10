@@ -2,21 +2,39 @@ import React from 'react'
 import List from '../../public/List.json'
 import Slider from "react-slick";
 import Card from './Card';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import axios from 'axios';
 
 const Freebook = () => {
+     const [book, setBook] = useState([]);
+     useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:8000/book'); // Use axios to fetch data
+                setBook(response.data); // Set the data from the response
+                console.log(response.data); // Log the data for debugging
+            } catch (error) {
+                console.error("Error fetching data:", error); // Handle any errors
+            }
+        };
+        fetchData();
+    }
+    , []);
+
     var settings = {
         dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 4,
+        slidesToScroll: 2,
         
         responsive: [
           {
             breakpoint: 1024,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToScroll: 2,
               infinite: true,
               dots: true
             }
@@ -42,7 +60,7 @@ const Freebook = () => {
         ]
       };
     
-    const filterdata=List.filter((items)=>items.category==="free");
+    const filterdata=book.filter((items)=>items.category==="free");
     console.log(filterdata)
     
   return (

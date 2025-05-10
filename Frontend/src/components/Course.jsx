@@ -1,9 +1,27 @@
 import React from 'react'
-import List from '../../public/List.json'
+import { useState } from 'react'
+// import List from '../../public/List.json'
 import Card from './Card'
 import {Link} from 'react-router-dom'
+import { useEffect } from 'react'
+import axios from 'axios'
+
+
 
 const Course = () => {
+  const[book,setBook]=useState([]);
+   useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:8000/book'); // Use axios to fetch data
+                setBook(response.data); // Set the data from the response
+                console.log(response.data); // Log the data for debugging
+            } catch (error) {
+                console.error("Error fetching data:", error); // Handle any errors
+            }
+        };
+        fetchData();
+    }, []);
   return (
     <>
     <div className='max-w-screen container mx-auto md:px-20 px-4 mt-[71px] dark:bg-gray-700 dark:text-white text-black'>
@@ -19,7 +37,7 @@ amet animi eos aut. Nobis quisquam reiciendis sunt quis sed magnam consequatur! 
         </div>
         <div className='grid grid-col  md:grid-cols-4'>
             {
-                List.map((item)=>{
+                book.map((item)=>{
                     return(<Card  className="md:w-80 w-[100%]" name={item.name} price={item.price} title={item.title} src={item.image}/>)
                 })
             }
