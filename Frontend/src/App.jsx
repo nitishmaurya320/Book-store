@@ -1,13 +1,13 @@
-import React from 'react'
+
 import { Route,Routes} from 'react-router-dom'
 import { useState } from 'react'
 import Home from './components/Home'
-import Course from './components/Course'
+
 import Courses from './components/Courses/Courses'
 import Signup from './components/Signup'
-import Navbar from './components/navbar'
+
 import Login from './components/Login'
-import toast, { Toaster } from 'react-hot-toast';
+
 // import useAuth from './context/AuthProvider'
 import { useAuth } from './context/AuthProvider'
 import { Navigate } from 'react-router-dom'
