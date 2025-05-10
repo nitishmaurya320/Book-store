@@ -11,6 +11,7 @@ import Login from './components/Login'
 // import useAuth from './context/AuthProvider'
 import { useAuth } from './context/AuthProvider'
 import { Navigate } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 
 
 const App = () => {
