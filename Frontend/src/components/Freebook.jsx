@@ -11,7 +11,7 @@ const Freebook = () => {
      useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/book'); // Use axios to fetch data
+                const response = await axios.get('https://book-store-6-jshw.onrender.com/book'); // Use axios to fetch data
                 setBook(response.data); // Set the data from the response
                 console.log(response.data); // Log the data for debugging
             } catch (error) {

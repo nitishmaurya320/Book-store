@@ -22,7 +22,7 @@ const Signup = ({isModalOpen,setIsModalOpen}) => {
       e.preventDefault(); // prevents page reload
       console.log('Submitted Data:', formData);
       
-       await axios.post('http://localhost:8000/user/signup', formData) 
+       await axios.post('https://book-store-6-jshw.onrender.com/user/signup', formData) 
       .then((res)=>{
       console.log(res.data);
       if(res.data){

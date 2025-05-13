@@ -16,7 +16,7 @@ const Login = ({isOpen,onClose}) => {
     const handleSubmit = async (e) => {
     e.preventDefault(); // prevents page reload
     console.log('Submitted Data:', formData);
-    await axios.post('http://localhost:8000/user/login', formData) 
+    await axios.post('https://book-store-6-jshw.onrender.com/user/login', formData) 
       .then((res)=>{
       console.log(res.data);
       if(res.data){
